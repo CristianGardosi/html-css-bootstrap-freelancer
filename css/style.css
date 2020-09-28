@@ -1,4 +1,7 @@
 /* UTILITIES */
+.mb-30{
+    margin-bottom: 30px;
+}
 
 /* NAV BAR */
 .nav-bar{
@@ -49,4 +52,27 @@
 .right-about{
     background: blue;
     height: 400px;
+}
+
+/* CONTACT */
+
+.contact-list-items{
+    background: grey;
+    line-height: 100px;
+}
+
+/* FOOTER */
+.footer{
+    background: #2c3e50;
+}
+
+.footer-col{
+    background: green;
+    height: 200px;
+    margin-top: 30px;
+}
+/* Copyright */
+.copyright{
+    background: blue;
+    height: 100px;
 }
