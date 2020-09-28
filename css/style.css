@@ -1,7 +1,31 @@
+/* GENERAL STYLES */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-size: 50px;
+    font-weight: 700; 
+}
+
 /* UTILITIES */
+/* Margini predefiniti */
 .mb-30{
     margin-bottom: 30px;
 }
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.mt-30{
+    margin-top: 30px;
+}
+
+.mt-50{
+    margin-top: 50px;
+}
+
 
 /* NAV BAR */
 .nav-bar{
@@ -9,14 +33,49 @@
     height: 100px;
 }
 
+.nav-bar a{
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
 .nav-left{
-    background: red;
     line-height: 100px;
 }
 
+.nav-left a{
+    font-size: 25px;
+}
+
+.nav-left i{
+    color: #1abc9c;
+    font-size: 15px;
+}
+@media screen and (min-width: 992px){
+    .nav-left{
+        text-align: left;
+    }
+    .nav-left a{
+        font-size: 30px;
+    }
+}
+
+
 .nav-right{
-    background: blue;
     line-height: 100px;
+}
+
+.nav-right ul li{
+    display: inline-block;
+}
+
+.nav-right ul li a{
+    font-size: 18px;
+    padding-left: 40px;
+}
+
+.nav-right ul li a:hover{
+    color: #1abc9c;
 }
 
 /* JUMBOTRON */
@@ -25,11 +84,29 @@
 }
 
 .jumbo-elements{
-    background: black;
-    height: 400px;
+    color: #fff;
 }
 
+.jumbo-elements h1{
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.jumbo-elements i{
+    font-size: 40px;
+}
+
+.jumbo-elements p{
+    font-size: 25px;
+}
+
+
+
+
 /* PORTFOLIO */
+.portfolio span{
+    font-size: 25px;
+}
 .portfolio-box{
     background: yellow;
     height: 250px;
@@ -41,6 +118,10 @@
 /* ABOUT */
 .about{
     background: #1abc9c;
+}
+
+.about h2{
+    padding-top: 30px;
 }
 
 .left-about{
@@ -73,6 +154,6 @@
 }
 /* Copyright */
 .copyright{
-    background: blue;
+    background: #1a252f;
     height: 100px;
 }
