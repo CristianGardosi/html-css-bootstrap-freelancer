@@ -19,10 +19,34 @@
 /* JUMBOTRON */
 .jumbotron{
     background: #1abc9c;
-    height: 500px;
 }
 
 .jumbo-elements{
     background: black;
+    height: 400px;
+}
+
+/* PORTFOLIO */
+.portfolio-box{
+    background: yellow;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* ABOUT */
+.about{
+    background: #1abc9c;
+}
+
+.left-about{
+    background: red;
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+.right-about{
+    background: blue;
     height: 400px;
 }
