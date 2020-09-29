@@ -22,6 +22,21 @@ p{
 i{
     font-size: 30px;
 }
+/* Buttons */
+.btn-default{
+    font-size: 18px;
+    background: #1abc9c;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    transition: .4s;
+}
+
+.btn-default:hover{
+    background: #118c74;
+    color: white;
+}
+
 /* List style */
 ul li{
     display: inline-block;
@@ -255,11 +270,16 @@ ul li{
 
 .footer-col ul li a{
     color: white;
+    padding-right: 30px;
+    transition: .4s;
+}
+.footer-col ul li a:hover{
+    color: #1abc9c;
 }
 /* Footer media query */
 @media screen and (min-width: 992px){
     .footer p{
-        font-size: px;
+        font-size: 20px;
     }
 }
 /* Copyright */
