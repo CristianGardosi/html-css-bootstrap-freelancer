@@ -18,44 +18,48 @@
 
 <body>
 
-    <!-- NAV BAR -->
-    <div class="nav-bar">
-        <div class="container">
-            <div class="row">
-                <!-- sx -->
-                <div class="col-xs-12 col-md-6">
-                    <div class="nav-left text-center">
-                        <a href="">START BOOTSTRAP <i class="fab fa-bootstrap"></i></a>
-                    </div>
-                </div>
-                <!-- dx -->
-                <div class="hidden-xs hidden-sm col-md-6">
-                    <div class="nav-right text-right">
-                        <ul>
-                            <li>
-                                <a href="">PORTFOLIO</a>
-                            </li>
-                            <li>
-                                <a href="">ABOUT</a>
-                            </li>
-                            <li>
-                                <a href="">CONTACT</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- HEADER NAV BAR BOOTSTRAP -->
+    <header class="main-header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Logo sx -->
+                <a class="navbar-brand text-uppercase" href="#">Start Bootstrap</a>
+                <!-- Voci menu dx -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="text-uppercase" href="">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="text-uppercase" href="">About</a>
+                        </li>
+                        <li>
+                            <a class="text-uppercase" href="">Contact</a>
+                        </li>
+                    </ul>
+                </div> 
+                <!-- Hamburger menu dx mobile -->
+                <div class="hamburger">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" 
+                    aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>  
             </div>
-        </div>
-    </div>
+        </nav>
+    </header>
 
     <!-- JUMBOTRON -->
     <div class="jumbotron">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-8 col-md-offset-2">
-                    <div class="jumbo-elements text-center">
-                        <img src="" alt="Profile pic">
-                        <h1 class="mb-30">START BOOSTRAP</h1>
+                    <div class="jumbo-elements text-center white-text">
+                        <img src="img/avatar.png" alt="">
+                        <h1 class="mb-30">START BOOTSTRAP</h1>
                         <span><i class="fas fa-star"></i></span>
                         <p class="mt-30">Graphic artists - web designers - illustrators</p>
                     </div>
@@ -73,7 +77,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-4">
-                        <!-- <div class="col-xs-6 col-xs-offset-3 col-sm-12 col-sm-offset-0"> -->
                             <div class="portfolio-box">
                                 PROVA
                             </div>
@@ -109,21 +112,24 @@
         </div>
 
         <!-- ABOUT -->
-        <div class="about">
-            <h2 class="text-center mb-50">ABOUT</h2>
+        <div class="about white-text">
+            <div class="about-intro text-center">
+                <h2 class="text-center mb-30">ABOUT</h2>
+                <span><i class="fas fa-star mb-30"></i></span>
+            </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <div class="left-about">
-                            PROVA
+                    <div class="col-xs-12 col-md-4 col-md-offset-2">
+                        <div class="left-about mb-30">
+                            <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets.</p>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-6 mb-30">
+                    <div class="col-xs-12 col-md-4 mb-30">
                         <div class="right-about">
-                            PROVA
+                            <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
                         </div>
                     </div>
-                    <div class="col-xs-12 text-center mb-50"><a href="">SUBSCRIBE</a></div>
+                    <div class="col-xs-12 text-center mb-50 mt-30"><a href=""><i class="fas fa-download"></i>  Free Download!</a></div>
                 </div>
             </div>
         </div>
@@ -133,46 +139,56 @@
             <h2 class="text-center mb-50 mt-50">CONTACT</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-8 col-md-offset-2">
-                        <div class="contact-list-items">
-                            <p>ok</p>
-                            <p>ok</p>
-                            <p>ok</p>
-                            <p>ok</p>
-                            <a href="">SEND</a>
-                        </div>
+                    <div class="col-md-4 col-md-offset-4">
+
                     </div>
                 </div>
             </div>
-        </div>
+
 
     </main>
 
     <!-- FOOTER -->
     <footer>
-        <div class="footer">
-            <div class="container text-center">
+        <div class="footer white-text text-center">
+            <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-4">
-                        <div class="footer-col mb-30 mt-30">
-                            PROVA
+                    <div class="col-xs-12 col-md-12 col-lg-3 col-lg-offset-1">
+                        <div class="footer-col">
+                            <h3 class="mb-30">LOCATION</h3>
+                            <p class="mb-30">232 Paradise Street, Los Angeles CA</p>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-4">
-                        <div class="footer-col mb-30 mt-30">
-                            PROVA
+                    <div class="col-xs-12 col-md-12 col-lg-4">
+                        <div class="footer-col">
+                            <h3 class="mb-30">AROUND THE WEB</h3>
+                            <ul class="mb-30">
+                                <li>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fas fa-basketball-ball"></i></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-4">
-                        <div class="footer-col mb-30 mt-30">
-                            PROVA
+                    <div class="col-xs-12 col-md-12 col-lg-3">
+                        <div class="footer-col">
+                            <h3 class="mb-30">ABOUT FREELANCER</h3>
+                            <p class="mb-30">Freelance is a free to use, MIT licensed Bootstrap theme created by Start Bootstrap . </p>
                         </div>
                     </div>
                  </div>
             </div>
         </div>
         <div class="copyright text-center">
-            <p>Copyright</p>
+            <p class="white-text">Copyright</p>
         </div>
     </footer>
 

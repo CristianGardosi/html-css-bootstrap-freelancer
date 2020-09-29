@@ -1,14 +1,38 @@
 /* GENERAL STYLES */
 body{
     font-family: 'Roboto', sans-serif;
-}
-
-h2{
-    font-size: 50px;
-    font-weight: 700; 
+    padding-top: 60px;
 }
 
 /* UTILITIES */
+ul li{
+    display: inline-block;
+}
+/* Typography */
+h2{
+    font-size: 35px;
+    font-weight: 700; 
+}
+
+h3{
+    font-weight:700;
+}
+
+p{
+    font-size: 18px;
+}
+
+i{
+    font-size: 30px;
+}
+/* Text colors */
+.green-text{
+    color: #1abc9c;
+}
+
+.white-text{
+    color: #fff;
+}
 /* Margini predefiniti */
 .mb-30{
     margin-bottom: 30px;
@@ -27,81 +51,95 @@ h2{
 }
 
 
-/* NAV BAR */
-.nav-bar{
-    background: #2c3e50;
-    height: 100px;
+/* NAV BAR BOOTSTRAP STYLE PERSONALIZZATI */
+.main-header .navbar{
+    background:#2c3e50;
+    border: none;
 }
 
-.nav-bar a{
+.main-header .navbar-brand{
+    height: 80px;
+    line-height: 80px;
+    padding: 0 15px;
+    font-size: 22px;
     font-weight: 700;
-    color: #fff;
-    text-decoration: none;
+    color: white;
+    transition: .4s;
 }
 
-.nav-left{
-    line-height: 100px;
-}
-
-.nav-left a{
-    font-size: 25px;
-}
-
-.nav-left i{
+.main-header .navbar-brand:hover{
     color: #1abc9c;
-    font-size: 15px;
+    background-color: black;
 }
+
+.main-header .navbar-nav li a{
+    height: 80px;
+    line-height: 80px;
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    transition: .4s;
+}
+
+.main-header .navbar-nav li a:hover{
+    color: #1abc9c;
+}
+/* Nav bar media query */
 @media screen and (min-width: 992px){
-    .nav-left{
-        text-align: left;
-    }
-    .nav-left a{
+    .main-header .navbar-brand{
+        height: 120px;
+        line-height: 120px;
         font-size: 30px;
     }
-}
-
-
-.nav-right{
-    line-height: 100px;
-}
-
-.nav-right ul li{
-    display: inline-block;
-}
-
-.nav-right ul li a{
-    font-size: 18px;
-    padding-left: 40px;
-}
-
-.nav-right ul li a:hover{
-    color: #1abc9c;
+    
+    .main-header .navbar-nav li a{
+        height: 120px;
+        line-height: 120px;
+         font-size: 18px;
+    }
 }
 
 /* JUMBOTRON */
 .jumbotron{
     background: #1abc9c;
-}
+} 
 
-.jumbo-elements{
-    color: #fff;
+.jumbo-elements img{
+    width: 300px;
 }
 
 .jumbo-elements h1{
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 700;
 }
 
 .jumbo-elements i{
-    font-size: 40px;
-}
-
-.jumbo-elements p{
     font-size: 25px;
 }
 
+.jumbo-elements p{
+    font-size: 20px;
+}
+/* Jumbotron media query (md) */
+@media screen and (min-width: 992px){
+    .jumbo-elements img{
+        width: 400px;
+    }
 
+    .jumbo-elements h1{
+        font-size: 65px;
+        font-weight: 700;
+    }
 
+    .jumbo-elements i{
+        font-size: 35px;
+    }
+    
+    .jumbo-elements p{
+        font-size: 30px;
+    }
+}
 
 /* PORTFOLIO */
 .portfolio span{
@@ -114,29 +152,56 @@ h2{
     margin-bottom: 30px;
 }
 
-
 /* ABOUT */
 .about{
     background: #1abc9c;
 }
 
 .about h2{
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .left-about{
-    background: red;
-    height: 400px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
-.right-about{
-    background: blue;
-    height: 400px;
+.about a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 15px;
+    transition: .4s;
+}
+
+.about a i{
+    font-size: 20px;
+}
+
+.about a:hover{
+    color: black;
+    background-color: white;
+}
+/* About media query (md) */
+@media screen and (min-width: 992px){
+    .about p{
+        font-size: 23px;
+    }
+
+    .about a{
+        font-size: 20px;
+        border: 3px solid white;
+        padding: 20px;
+    }
+    
+    .about a i{
+        font-size: 25px;
+    }
+    
 }
 
 /* CONTACT */
-
 .contact-list-items{
     background: grey;
     line-height: 100px;
@@ -147,10 +212,18 @@ h2{
     background: #2c3e50;
 }
 
-.footer-col{
-    background: green;
-    height: 200px;
-    margin-top: 30px;
+.footer-col ul li a{
+    color: white;
+}
+@media screen and (min-width: 992px){
+    .footer p{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .footer p{
+        font-size: 23px;
+    }
 }
 /* Copyright */
 .copyright{
