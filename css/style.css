@@ -5,9 +5,6 @@ body{
 }
 
 /* UTILITIES */
-ul li{
-    display: inline-block;
-}
 /* Typography */
 h2{
     font-size: 35px;
@@ -24,6 +21,10 @@ p{
 
 i{
     font-size: 30px;
+}
+/* List style */
+ul li{
+    display: inline-block;
 }
 /* Text colors */
 .green-text{
@@ -49,7 +50,6 @@ i{
 .mt-50{
     margin-top: 50px;
 }
-
 
 /* NAV BAR BOOTSTRAP STYLE PERSONALIZZATI */
 .main-header .navbar{
@@ -154,10 +154,7 @@ i{
     max-width: 100%;
     border-radius: 20px;
 }
-
-.portfolio-box img:hover
-
-/* Media query portfolio */
+/* Portfolio media query  */
 @media screen and (min-width: 992px){
     .portfolio h2{
         font-size: 50px;
@@ -222,6 +219,35 @@ i{
     margin: 30px 0;
 }
 
+.form-elements input, 
+.form-elements textarea{
+    font-size: 19px;
+    padding: 25px 0;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.form-elements input:focus, 
+.form-elements textarea:focus{
+    border-bottom: 1px solid #1abc9c;
+    box-shadow: none;
+}
+/* Contact media query */
+@media screen and (min-width: 992px){
+
+.form-elements input, 
+.form-elements textarea{
+    font-size: 22px;
+    padding: 30px 0;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ddd;
+}
+}
+
 /* FOOTER */
 .footer{
     background: #2c3e50;
@@ -236,7 +262,6 @@ i{
         font-size: px;
     }
 }
-
 /* Copyright */
 .copyright{
     background: #1a252f;
