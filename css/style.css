@@ -155,11 +155,9 @@ i{
     border-radius: 20px;
 }
 
-.portfolio-box img:hover{
-    
-}
+.portfolio-box img:hover
 
-
+/* Media query portfolio */
 @media screen and (min-width: 992px){
     .portfolio h2{
         font-size: 50px;
@@ -180,10 +178,6 @@ i{
     padding-top: 50px;
 }
 
-.left-about{
-    /* margin-bottom: 30px; */
-}
-
 .about a{
     font-size: 18px;
     text-decoration: none;
@@ -202,8 +196,11 @@ i{
     color: black;
     background-color: white;
 }
-/* About media query (md) */
+/* About media query */
 @media screen and (min-width: 992px){
+    .about h2{
+        font-size: 50px;
+    }
     .about p{
         font-size: 23px;
     }
@@ -221,9 +218,8 @@ i{
 }
 
 /* CONTACT */
-.contact-list-items{
-    background: grey;
-    line-height: 100px;
+.form-group{
+    margin: 30px 0;
 }
 
 /* FOOTER */
@@ -234,18 +230,20 @@ i{
 .footer-col ul li a{
     color: white;
 }
+/* Footer media query */
 @media screen and (min-width: 992px){
     .footer p{
-        font-size: 20px;
+        font-size: px;
     }
 }
-@media screen and (min-width: 1200px){
-    .footer p{
-        font-size: 23px;
-    }
-}
+
 /* Copyright */
 .copyright{
     background: #1a252f;
     height: 100px;
+    line-height: 100px;
+}
+
+.copyright p{
+    font-size: 12px;
 }
